@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0;
+  font-family: "Arial";
+}
+.wrapper {
+  padding: 0 16px;
+  max-width: 930px;
+  margin: 0 auto;
+  background-color: #ffffff;
+}
+header {
+  padding: 15px 0;
+  align-items: center;
+}
+img {
+  width: 100%;
+}
+h1 {
+  font-size: 24px;
+  color: #39930d;
+  font-family: "Arial";
+  margin-bottom: 17px;
+}
+a {
+  text-decoration: none;
+}
+.flex-beetween {
+  display: flex;
+  justify-content: space-between;
+}
+.img-ball {
+  animation: ball 5s infinite alternate;
+}
+@keyframes ball {
+  0%,
+  50% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.img-ball:hover img {
+  transform: scale(1.1); /* Збільшити зображення при наведенні */
+}
+.logo-block {
+  align-items: center;
+}
+.img-ball {
+  margin-right: 8px;
+}
+.page-text {
+  font-size: 14px;
+  color: #5a5a5a;
+}
+.page-text b {
+  font-size: 24px;
+  color: #39930d;
+  display: block;
+}
+.work-time,
+.phone a {
+  font-size: 14px;
+  color: #5a5a5a;
+  gap: 29px;
+}
+
+.phone a:hover {
+  color: blue;
+  text-decoration: underline;
+}
+
+.contact,
+.contact p {
+  align-items: center;
+}
+.contact {
+  column-gap: 29px;
+}
+.contact img {
+  width: 22px;
+  height: 22px;
+}
+.work-time,
+.phone {
+  column-gap: 5px;
+}
+.main {
+  padding-bottom: 47px;
+  flex-wrap: wrap;
+}
+
+picture {
+  margin-bottom: 31px;
+}
+
+.large-foto {
+  margin-bottom: 11px;
+}
+
+.menu p {
+  padding: 13px 19px;
+  font-size: 18px;
+  background-color: #39930d;
+  color: #ffffff;
+}
+.menu {
+  min-width: 301px;
+}
+.partners-list {
+  padding: 20px;
+  list-style: none;
+}
+
+.partners {
+  position: relative;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #343434;
+}
+.partners:before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  height: 2px;
+  width: 0%;
+  background-color: #39930d;
+  transition: all 1s ease;
+}
+.partners-list > li:hover > .partners:before {
+  width: 100%;
+}
+
+.main-text {
+  max-width: 611px;
+}
+.main-page {
+  font-size: 14px;
+  line-height: 21px;
+  color: #343434;
+}
+footer {
+  font-size: 14px;
+  color: #ffffff;
+  background-color: #39930d;
+  padding: 13px;
+}
+page-footer {
+  font-size: 14px;
+  color: #ffffff;
+}
+.footer-social-list {
+  gap: 10px;
+  list-style: none;
+}
+
+.footer-social,
+.footer-social ul {
+  background-color: #39930d;
+  align-items: center;
+}
+.footer-social-link img {
+  transition: color 0.3s;
+}
+.footer-social-link img:hover {
+  filter: invert(31%) sepia(86%) saturate(2772%) hue-rotate(177deg)
+    brightness(50%) contrast(97%);
+  transform: scale(1.2);
+}
